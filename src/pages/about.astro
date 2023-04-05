@@ -1,14 +1,12 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+
+const title = 'About Us';
+const description = 'At All Inclusive Vacation Info, our mission is to help you find the perfect all-inclusive vacation tailored to your unique preferences and travel style.';
+const heroImage = 'url(\'https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80\')';
 ---
 
-<Layout
-	title="About Us"
-	description="At All Inclusive Vacation Info, our mission is to help you find the perfect all-inclusive vacation tailored to your unique preferences and travel style."
-	pubDate={new Date('March 26 2023')}
-	updatedDate={new Date('March 26 2023')}
-	heroImage="url('https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')"
->
+<MainLayout title={title} description={description} heroImage={heroImage}>
 	<h1>Welcome to All Inclusive Vacation Info – Your Ultimate Guide to Unforgettable All Inclusive Getaways!</h1>
 
 	<h2>Our Mission</h2>
@@ -43,4 +41,4 @@ import Layout from '../layouts/BlogPost.astro';
 		all-inclusive getaway!</p>
 
 	<p>If you have any questions or feedback, please feel free to reach out to us through our Contact Us page. We'd love to hear from you!</p>
-</Layout>
+</MainLayout>

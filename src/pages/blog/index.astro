@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
@@ -34,7 +34,7 @@ const posts = (await getCollection('blog')).sort(
 		</style>
 	</head>
 	<body>
-		<Header />
+		<Hero title="Discover Your Dream All-Inclusive Getaway" description="Unforgettable Vacations Tailored for Every Traveler" heroImage="url('https://images.unsplash.com/photo-1639416316712-5cabf32cc1a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80')" />
 		<main>
 			<section>
 				<ul>
